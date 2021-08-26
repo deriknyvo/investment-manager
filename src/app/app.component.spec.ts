@@ -20,16 +20,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'investment-manager'`, () => {
+  it('deve conter uma tag router-outlet', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('investment-manager');
-  });
+    const element = fixture.nativeElement;
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('investment-manager app is running!');
+    expect(element.querySelector('router-outlet')).toBeTruthy();
   });
 });
