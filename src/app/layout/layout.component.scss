@@ -10,8 +10,13 @@
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
     height: 70px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #cfcece;
+    color: #373737;
 }
 
 .menus {
@@ -21,4 +26,17 @@
         height: 100%;
         border-radius: 0;
     }
+}
+
+.mat-icon-button {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.mat-icon {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px !important;
 }
