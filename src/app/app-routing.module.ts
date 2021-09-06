@@ -8,8 +8,8 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       {
-        path: 'entradas',
-        loadChildren: () => import('./pages/cash-inflow/cash-inflow.module').then(m => m.CashInflowModule)
+        path: 'transactions',
+        loadChildren: () => import('./pages/transactions/transactions.module').then(m => m.TransactionsModule)
       }
     ]
   },
