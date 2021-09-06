@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageBalanceComponent } from './page-balance.component';
+import { CashInflowComponent } from './cash-inflow.component';
 
-describe('PageBalanceComponent', () => {
-  let component: PageBalanceComponent;
-  let fixture: ComponentFixture<PageBalanceComponent>;
+describe('CashInflowComponent', () => {
+  let component: CashInflowComponent;
+  let fixture: ComponentFixture<CashInflowComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PageBalanceComponent ]
+      declarations: [ CashInflowComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageBalanceComponent);
+    fixture = TestBed.createComponent(CashInflowComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

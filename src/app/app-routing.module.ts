@@ -5,11 +5,17 @@ import { LayoutComponent } from './layout/layout.component';
 const routes: Routes = [
   {
     path: '',
-    component: LayoutComponent
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'entradas',
+        loadChildren: () => import('./pages/cash-inflow/cash-inflow.module').then(m => m.CashInflowModule)
+      }
+    ]
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+    loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule)
   }
 ];
 
