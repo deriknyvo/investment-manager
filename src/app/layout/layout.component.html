@@ -1,17 +1,19 @@
-<div class="content">
-    <nav class="navbar">
-        <div class="menus">
-            <button mat-button routerLink="transactions">Transações</button>
-            <button mat-button routerLink="">Ativos</button>
-            <button mat-button routerLink="">Carteira</button>
-        </div>
-
-        <button mat-icon-button>
-          <mat-icon [fontSet]="'material-icons-outlined'">account_circle</mat-icon>
-        </button>
-    </nav>
+<div class="max-container">
+    <div class="content">
+        <nav class="navbar">
+            <div class="menus">
+                <button mat-button routerLink="transactions">Transações</button>
+                <button mat-button routerLink="">Ativos</button>
+                <button mat-button routerLink="">Carteira</button>
+            </div>
     
-    <section class="main">
-        <router-outlet></router-outlet>
-    </section>
+            <button mat-icon-button>
+              <mat-icon [fontSet]="'material-icons-outlined'">account_circle</mat-icon>
+            </button>
+        </nav>
+        
+        <section class="main">
+            <router-outlet></router-outlet>
+        </section>
+    </div>
 </div>

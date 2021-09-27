@@ -1,9 +1,30 @@
 <div class="content">
-    <speed-dial-fab 
-        class="speed-dial-container" 
-        [ngClass]="speedDialFabPosition" 
-        [reverse-column-direction]="true" 
-        (fabClick)="onSpeedDialFabClicked($event)" 
-        [buttons]="speedDialFabButtons">
-    </speed-dial-fab>
+    <header>
+        <h1>Transações</h1>
+        <p>
+            Aqui você pode acompanhar todos os lançamentos de entrada e saída.
+        </p>
+    </header>
+
+    <main>
+        <mat-tab-group mat-align-tabs="center">
+            <mat-tab label="Entradas">
+                <p>Entradas</p>
+            </mat-tab>
+            
+            <mat-tab label="Saídas">
+                <p>Saídas</p>
+            </mat-tab>
+        </mat-tab-group>
+    </main>
+
+    <footer>
+        <speed-dial-fab 
+            class="speed-dial-container" 
+            [ngClass]="speedDialFabPosition" 
+            [reverse-column-direction]="true" 
+            (fabClick)="onSpeedDialFabClicked($event)" 
+            [buttons]="speedDialFabButtons">
+        </speed-dial-fab>
+    </footer>
 </div>
